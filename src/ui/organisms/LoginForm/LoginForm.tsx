@@ -1,7 +1,7 @@
 import React, { ReactElement } from 'react'
 import Button from 'ui/atoms/Button'
 import TextField from 'ui/atoms/TextField'
-import HorizontalBreak from 'ui/HorizontalBreak'
+import HorizontalBreak from 'ui/atoms/HorizontalBreak'
 import { Form } from './subcomponents'
 
 const LoginForm = (): ReactElement => {

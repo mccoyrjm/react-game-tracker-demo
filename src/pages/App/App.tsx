@@ -4,20 +4,27 @@ import {
    Switch,
    Route
 } from 'react-router-dom'
+import GlobalStyle from 'styles/globalStyles'
 import Header from 'ui/organisms/Header'
 import Footer from 'ui/organisms/Footer'
 import Login from 'pages/Login'
+import { Container, Main } from './subcomponents'
 
 const App = (): ReactElement => {
   return (
     <Router>
-      <Header />
-      <Switch>
-        <Route path="/">
-          <Login />
-        </Route>
-      </Switch>
-      <Footer />
+      <GlobalStyle />
+      <Container>
+        <Header />
+        <Main>
+          <Switch>
+            <Route path="/">
+              <Login />
+            </Route>
+          </Switch>
+        </Main>
+        <Footer />
+      </Container>
     </Router>
   )
 }

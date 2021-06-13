@@ -1,8 +1,6 @@
-const theme = {
-  colors: {
-    primary: '#000000',
-    secondary: '#ffffff'
-  }
-}
+/* eslint-disable import/no-anonymous-default-export */
+import colors from 'styles/colors'
 
-export default theme
+export default {
+  colors
+}

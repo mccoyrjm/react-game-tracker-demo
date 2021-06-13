@@ -1,10 +1,15 @@
 import { ReactElement } from 'react'
-import { useLocation } from 'react-router-dom'
+import { ThemeProvider } from 'styled-components'
+import theme from 'styles/theme'
+import { StyledHeader } from './subcomponents'
 
 const Header = (): ReactElement => {
-  const isLogin = useLocation().pathname === '/'
 
-  return isLogin ? <></> : <header>This is my header.</header>
+  return (
+    <ThemeProvider theme={theme}>
+      <StyledHeader>This is my header.</StyledHeader>
+    </ThemeProvider>
+  )
 }
 
 export default Header

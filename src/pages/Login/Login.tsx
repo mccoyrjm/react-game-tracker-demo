@@ -1,6 +1,6 @@
 import React, { ReactElement } from 'react'
-import { Page } from 'pages/subcomponents'
 import LoginForm from 'ui/organisms/LoginForm'
+import { Page } from './subcomponents'
 
 const Login = (): ReactElement => {
   return (

@@ -1,7 +1,13 @@
 import React, { ReactElement } from 'react'
+import { Input } from './subcomponents'
 
-const TextField = (): ReactElement => {
-  return <input type="text" />
+interface TextFieldProps {
+  type?: 'text' | 'password'
+  placeholder?: string
+}
+
+const TextField = ({ type = 'text', placeholder = '' }: TextFieldProps): ReactElement => {
+  return <Input type={type} placeholder={placeholder} />
 }
 
 export default TextField

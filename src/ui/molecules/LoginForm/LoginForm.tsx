@@ -49,6 +49,7 @@ const LoginForm = (): ReactElement => {
       <HorizontalBreak />
       <ButtonSection>
         <Button
+          type="submit"
           isPrimary
           onClick={() => {
             dispatch(authenticateLogin({ userId, password }))

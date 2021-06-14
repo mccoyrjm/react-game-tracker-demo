@@ -5,6 +5,7 @@ import { StyledButton } from './subcomponents'
 
 interface ButtonProps {
   children: ReactNode
+  type?: 'button' | 'submit'
   isPrimary?: boolean
   isDisabled?: boolean
   onClick: () => void
@@ -12,13 +13,14 @@ interface ButtonProps {
 
 const Button = ({
   children,
+  type = 'button',
   isPrimary = false,
   isDisabled = false,
   onClick,
 }: ButtonProps): ReactElement => (
   <ThemeProvider theme={theme}>
     <StyledButton
-      type="button"
+      type={type}
       isPrimary={isPrimary}
       onClick={onClick}
       disabled={isDisabled}

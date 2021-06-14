@@ -4,6 +4,7 @@ import GlobalStyle from 'styles/globalStyles'
 import Header from 'ui/organisms/Header'
 import Footer from 'ui/organisms/Footer'
 import Login from 'pages/Login'
+import Summary from 'pages/Summary'
 import { Container, Main } from './subcomponents'
 
 const App = (): ReactElement => (
@@ -13,6 +14,9 @@ const App = (): ReactElement => (
       <Header />
       <Main>
         <Switch>
+          <Route path="/summary">
+            <Summary />
+          </Route>
           <Route path="/">
             <Login />
           </Route>

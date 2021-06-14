@@ -1,9 +1,9 @@
 /* eslint-disable import/no-anonymous-default-export */
 export default {
-    primary: '#000000',
-    secondary: '#ffffff',
+    primary: '#0671b7',
+    secondary: '#2ba4da',
     black: '#000000',
     white: '#ffffff',
-    lightGrey: '#c5c5c5',
+    lightGrey: '#fbfbfb',
     grey: '#888888'
 }

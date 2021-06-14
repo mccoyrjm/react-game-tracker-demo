@@ -2,7 +2,11 @@ import styled, { css } from 'styled-components'
 import query from 'styles/mediaQueries'
 
 export const Container = styled.div`
-  margin: 16px 0;
+  margin: 0 0 16px;
+  width: 100%;
+  @media ${query.greaterThanMedium} {
+    max-width: 320px;
+  }
 `
 
 export const Title = styled.h2`

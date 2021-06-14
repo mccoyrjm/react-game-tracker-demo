@@ -11,14 +11,17 @@ import { StyledHeader, WelcomeText } from './subcomponents'
 const Header = (): ReactElement => {
   const dispatch = useDispatch()
   const history = useHistory()
-  const { loggedInUser } = useSelector(({ login }: RootState) => login)
+  const {
+    accessToken,
+    user: { firstName },
+  } = useSelector(({ login }: RootState) => login)
 
   return (
     <ThemeProvider theme={theme}>
       <StyledHeader>
-        {loggedInUser && (
+        {accessToken && (
           <>
-            <WelcomeText>Welcome {loggedInUser}!</WelcomeText>
+            <WelcomeText>Welcome {firstName}!</WelcomeText>
             <Button
               onClick={() => {
                 dispatch(resetLoginState())

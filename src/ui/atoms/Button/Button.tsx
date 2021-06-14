@@ -22,7 +22,10 @@ const Button = ({
     <StyledButton
       type={type}
       isPrimary={isPrimary}
-      onClick={onClick}
+      onClick={(event) => {
+        event.preventDefault()
+        onClick()
+      }}
       disabled={isDisabled}
     >
       {children}

@@ -10,4 +10,5 @@ export interface EntityGame {
   _id: string
   entityId: string
   gameId: string
+  title: string
 }

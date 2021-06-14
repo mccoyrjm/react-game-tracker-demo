@@ -13,16 +13,16 @@ import { Form, ButtonSection } from './subcomponents'
 const LoginForm = (): ReactElement => {
   const history = useHistory()
   const dispatch = useDispatch()
-  const { error, loggedInUser } = useSelector(({ login }: RootState) => login)
+  const { error, accessToken } = useSelector(({ login }: RootState) => login)
 
   const [userId, setUserId] = useState('')
   const [password, setPassword] = useState('')
 
   useEffect(() => {
-    if (loggedInUser) {
+    if (accessToken) {
       history.push('/summary')
     }
-  }, [loggedInUser])
+  }, [accessToken])
 
   return (
     <Form>

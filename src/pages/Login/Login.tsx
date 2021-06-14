@@ -1,10 +1,14 @@
 import React, { ReactElement } from 'react'
 import LoginForm from 'ui/molecules/LoginForm'
-import { Page } from './subcomponents'
+import { Page, PageHeader } from 'pages/subcomponents'
+import { LoginContainer } from './subcomponents'
 
 const Login = (): ReactElement => (
   <Page>
-    <LoginForm />
+    <PageHeader>Welcome to Game Tracker Demo!</PageHeader>
+    <LoginContainer>
+      <LoginForm />
+    </LoginContainer>
   </Page>
 )
 

@@ -4,7 +4,7 @@ import { Container } from './subcomponents'
 export type Type = 'info' | 'error'
 
 interface AlertBannerProps {
-  children?: ReactNode
+  children: ReactNode
   type: Type
 }
 

@@ -1,5 +1,5 @@
 import React, { ReactElement } from 'react'
-import LoginForm from 'ui/organisms/LoginForm'
+import LoginForm from 'ui/molecules/LoginForm'
 import { Page } from './subcomponents'
 
 const Login = (): ReactElement => (

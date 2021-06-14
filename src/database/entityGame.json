@@ -1,10 +1,59 @@
 {
   "entityGame": [
     {
-      "_id": "3ad17ec2-c69a-4038-bf80-1b6cc4154bfe",
-      "entityId": "fda8c82f-91b5-4f97-bb09-95322e489c21",
-      "gameId": "1b4c4fc0-af39-4f15-bfd1-c991f0863885",
+      "entityId": "d964b413-def6-4a39-a0d0-40156725daad",
+      "gameId": "1",
       "title": "The Legend of Zelda: Ocarina of Time"
+    },
+    {
+      "entityId": "d964b413-def6-4a39-a0d0-40156725daad",
+      "gameId": "2",
+      "title": "The Legend of Zelda: Majora's Mask"
+    },
+    {
+      "entityId": "d964b413-def6-4a39-a0d0-40156725daad",
+      "gameId": "3",
+      "title": "The Legend of Zelda: Breath of the Wild"
+    },
+    {
+      "entityId": "d964b413-def6-4a39-a0d0-40156725daad",
+      "gameId": "4",
+      "title": "Super Mario Bros."
+    },
+    {
+      "entityId": "d964b413-def6-4a39-a0d0-40156725daad",
+      "gameId": "5",
+      "title": "Banjo-Kazooie"
+    },
+    {
+      "entityId": "d964b413-def6-4a39-a0d0-40156725daad",
+      "gameId": "5",
+      "title": "Banjo-Tooie"
+    },
+    {
+      "entityId": "7959e19e-8e7b-48ae-8052-545d399f1627",
+      "gameId": "6",
+      "title": "Oregon Trail"
+    },
+    {
+      "entityId": "7959e19e-8e7b-48ae-8052-545d399f1627",
+      "gameId": "7",
+      "title": "Pong"
+    },
+    {
+      "entityId": "7959e19e-8e7b-48ae-8052-545d399f1627",
+      "gameId": "8",
+      "title": "Pac-Man"
+    },
+    {
+      "entityId": "ce554b06-e0df-4605-b3c9-af5fb53164fa",
+      "gameId": "9",
+      "title": "Dig Dug"
+    },
+    {
+      "entityId": "ce554b06-e0df-4605-b3c9-af5fb53164fa",
+      "gameId": "9",
+      "title": "Donkey Kong"
     }
   ]
 }

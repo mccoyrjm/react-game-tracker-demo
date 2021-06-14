@@ -1,11 +1,25 @@
 {
   "users": [
     {
-      "_id": "fda8c82f-91b5-4f97-bb09-95322e489c21",
+      "id": "d964b413-def6-4a39-a0d0-40156725daad",
       "username": "rmccoy",
       "password": "test123",
       "firstName": "Ryan",
       "lastName": "McCoy"
+    },
+    {
+      "id": "7959e19e-8e7b-48ae-8052-545d399f1627",
+      "username": "mlewis",
+      "password": "test123",
+      "firstName": "Meriwether",
+      "lastName": "Lewis"
+    },
+    {
+      "id": "ce554b06-e0df-4605-b3c9-af5fb53164fa",
+      "username": "wclark",
+      "password": "test123",
+      "firstName": "William",
+      "lastName": "Clark"
     }
   ]
 }

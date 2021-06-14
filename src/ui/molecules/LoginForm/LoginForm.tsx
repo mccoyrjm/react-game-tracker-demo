@@ -1,7 +1,8 @@
-import React, { ReactElement, useState } from 'react'
+import React, { ReactElement, useState, useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { authenticateLogin } from 'state/actions/login'
 import { RootState } from 'state/store'
+import { useHistory } from 'react-router-dom'
 import { InputEvent } from 'typings/components'
 import AlertBanner from 'ui/molecules/AlertBanner'
 import TextField from 'ui/atoms/TextField'
@@ -10,11 +11,18 @@ import Button from 'ui/atoms/Button'
 import { Form, ButtonSection } from './subcomponents'
 
 const LoginForm = (): ReactElement => {
+  const history = useHistory()
   const dispatch = useDispatch()
-  const { error } = useSelector(({ login }: RootState) => login)
+  const { error, loggedInUser } = useSelector(({ login }: RootState) => login)
 
   const [userId, setUserId] = useState('')
   const [password, setPassword] = useState('')
+
+  useEffect(() => {
+    if (loggedInUser) {
+      history.push('/summary')
+    }
+  }, [loggedInUser])
 
   return (
     <Form>

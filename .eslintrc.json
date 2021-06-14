@@ -18,6 +18,7 @@
     "arrow-body-style": "warn",
     "comma-dangle": "off",
     "extensions": "off",
+    "implicit-arrow-linebreak": "off",
     "import/extensions": [
       "error",
       "ignorePackages",
@@ -33,11 +34,13 @@
     "linebreak-style": ["error", "windows"],
     "no-unused-vars": "warn",
     "no-use-before-define": "off",
+    "operator-linebreak": "off",
     "prettier/prettier": "error",
     "react/jsx-filename-extension": [
       2,
       { "extensions": [".js", ".jsx", ".ts", ".tsx"] }
     ],
+    "react/jsx-one-expression-per-line": "off",
     "react/prop-types": "off",
     "react/require-default-props": "off",
     "semi": "off"

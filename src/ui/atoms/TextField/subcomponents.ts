@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { breakPoints } from 'styles/mediaQueries'
 
 // eslint-disable-next-line import/prefer-default-export
 export const Input = styled.input`
@@ -8,5 +9,6 @@ export const Input = styled.input`
   padding: 0 8px;
   height: 40px;
   width: 100%;
+  max-width: ${breakPoints.tiny};
   font-size: 14px;
 `

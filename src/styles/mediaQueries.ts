@@ -2,18 +2,19 @@ const unit = 'px'
 
 // Size names based on DnD Terminology!
 // https://dungeons.fandom.com/wiki/SRD:Table_of_Creature_Size_and_Scale
-const breakPoints = {
-  tiny: 320,
-  small: 480,
-  medium: 768,
-  large: 992,
+export const breakPoints = {
+  diminutive: `320${unit}`,
+  tiny: `415${unit}`,
+  small: `480${unit}`,
+  medium: `768${unit}`,
+  large: `992${unit}`,
 }
 
 const greaterThan = {
-  greaterThanTiny: `min-width: ${breakPoints.tiny}${unit}`,
-  greaterThanSmall: `min-width: ${breakPoints.small}${unit}`,
-  greaterThanMedium: `min-width: ${breakPoints.medium}${unit}`,
-  greaterThanLarge: `min-width: ${breakPoints.large}${unit}`,
+  greaterThanTiny: `(min-width: ${breakPoints.tiny})`,
+  greaterThanSmall: `(min-width: ${breakPoints.small})`,
+  greaterThanMedium: `(min-width: ${breakPoints.medium})`,
+  greaterThanLarge: `(min-width: ${breakPoints.large})`,
 }
 
 export default greaterThan

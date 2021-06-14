@@ -1,8 +1,9 @@
 import styled from 'styled-components'
+import { breakPoints } from 'styles/mediaQueries'
 
 export const Form = styled.form`
   width: 100%;
-  max-width: 480px;
+  max-width: ${breakPoints.tiny};
 `
 
 export const ButtonSection = styled.div`

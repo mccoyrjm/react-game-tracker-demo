@@ -31,7 +31,7 @@ export const StyledButton = styled.button<StyleButtonProps>`
     `
   }}
 
-  @media (${query.greaterThanSmall}) {
+  @media ${query.greaterThanSmall} {
     max-width: 200px;
   }
 `

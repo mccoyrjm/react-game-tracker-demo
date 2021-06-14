@@ -6,8 +6,7 @@ import { StyledFooter } from './subcomponents'
 const Footer = (): ReactElement => (
   <ThemeProvider theme={theme}>
     <StyledFooter>
-      <p>This is my footer.</p>
-      <p>This is my footer.</p>
+      <p>Demo web app developed by Ryan McCoy.</p>
     </StyledFooter>
   </ThemeProvider>
 )

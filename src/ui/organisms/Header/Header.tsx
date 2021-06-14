@@ -1,12 +1,37 @@
 import React, { ReactElement } from 'react'
+import { useDispatch, useSelector } from 'react-redux'
+import { useHistory } from 'react-router-dom'
+import { resetLoginState } from 'state/actions/login'
+import { RootState } from 'state/store'
 import { ThemeProvider } from 'styled-components'
 import theme from 'styles/theme'
-import { StyledHeader } from './subcomponents'
+import Button from 'ui/atoms/Button'
+import { StyledHeader, WelcomeText } from './subcomponents'
 
-const Header = (): ReactElement => (
-  <ThemeProvider theme={theme}>
-    <StyledHeader>This is my header.</StyledHeader>
-  </ThemeProvider>
-)
+const Header = (): ReactElement => {
+  const dispatch = useDispatch()
+  const history = useHistory()
+  const { loggedInUser } = useSelector(({ login }: RootState) => login)
+
+  return (
+    <ThemeProvider theme={theme}>
+      <StyledHeader>
+        {loggedInUser && (
+          <>
+            <WelcomeText>Welcome {loggedInUser}!</WelcomeText>
+            <Button
+              onClick={() => {
+                dispatch(resetLoginState())
+                history.push('/')
+              }}
+            >
+              Logout
+            </Button>
+          </>
+        )}
+      </StyledHeader>
+    </ThemeProvider>
+  )
+}
 
 export default Header

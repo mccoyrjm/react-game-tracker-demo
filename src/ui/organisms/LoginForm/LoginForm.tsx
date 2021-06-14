@@ -12,7 +12,9 @@ const LoginForm = (): ReactElement => (
     <ButtonSection>
       <Button
         isPrimary
-        onClick={() => { console.log('login click') }}
+        onClick={() => {
+          console.log('login click')
+        }}
       >
         Login
       </Button>

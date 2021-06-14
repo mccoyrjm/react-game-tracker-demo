@@ -2,5 +2,5 @@
 import colors from 'styles/colors'
 
 export default {
-  colors
+  colors,
 }

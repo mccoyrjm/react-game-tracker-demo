@@ -14,7 +14,7 @@ const Button = ({
   children,
   isPrimary = false,
   isDisabled = false,
-  onClick
+  onClick,
 }: ButtonProps): ReactElement => (
   <ThemeProvider theme={theme}>
     <StyledButton

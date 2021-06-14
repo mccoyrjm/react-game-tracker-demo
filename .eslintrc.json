@@ -18,7 +18,8 @@
   },
   "plugins": [
       "react",
-      "@typescript-eslint"
+      "@typescript-eslint",
+      "prettier"
   ],
   "rules": {
     "comma-dangle": "off",
@@ -35,6 +36,7 @@
     ],
     "import/no-unresolved": "off",
     "linebreak-style": ["error", "windows"],
+    "prettier/prettier": "error",
     "react/jsx-filename-extension": [2, { "extensions": [".js", ".jsx", ".ts", ".tsx"] }],
     "react/prop-types": "off",
     "react/require-default-props": "off",

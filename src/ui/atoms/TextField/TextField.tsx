@@ -6,7 +6,10 @@ interface TextFieldProps {
   placeholder?: string
 }
 
-const TextField = ({ type = 'text', placeholder = '' }: TextFieldProps): ReactElement => (
+const TextField = ({
+  type = 'text',
+  placeholder = '',
+}: TextFieldProps): ReactElement => (
   <Input type={type} placeholder={placeholder} />
 )
 

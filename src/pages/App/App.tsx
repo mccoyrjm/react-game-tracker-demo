@@ -1,9 +1,5 @@
 import React, { ReactElement } from 'react'
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route
-} from 'react-router-dom'
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 import GlobalStyle from 'styles/globalStyles'
 import Header from 'ui/organisms/Header'
 import Footer from 'ui/organisms/Footer'

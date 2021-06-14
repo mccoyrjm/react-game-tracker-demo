@@ -6,14 +6,14 @@ const breakPoints = {
   tiny: 320,
   small: 480,
   medium: 768,
-  large: 992
+  large: 992,
 }
 
 const greaterThan = {
   greaterThanTiny: `min-width: ${breakPoints.tiny}${unit}`,
   greaterThanSmall: `min-width: ${breakPoints.small}${unit}`,
   greaterThanMedium: `min-width: ${breakPoints.medium}${unit}`,
-  greaterThanLarge: `min-width: ${breakPoints.large}${unit}`
+  greaterThanLarge: `min-width: ${breakPoints.large}${unit}`,
 }
 
 export default greaterThan

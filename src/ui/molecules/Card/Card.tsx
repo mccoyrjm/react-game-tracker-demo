@@ -6,11 +6,12 @@ import { Container, Title, Content } from './subcomponents'
 interface CardProps {
   children?: ReactNode
   title?: string
+  maxWidth?: string
 }
 
-const Card = ({ title, children }: CardProps): ReactElement => (
+const Card = ({ title, children, maxWidth }: CardProps): ReactElement => (
   <ThemeProvider theme={theme}>
-    <Container>
+    <Container maxWidth={maxWidth}>
       <Title>{title}</Title>
       <Content>{children}</Content>
     </Container>

@@ -1,7 +1,7 @@
 import styled, { css } from 'styled-components'
 import query from 'styles/mediaQueries'
 
-export const Container = styled.div`
+export const Container = styled.div<{ maxWidth?: string }>`
   margin: 0 0 16px;
   width: 100%;
   @media ${query.greaterThanMedium} {
@@ -18,14 +18,9 @@ export const Title = styled.h2`
     background-color: ${theme.colors.primary};
     color: ${theme.colors.lightGrey};
   `}
-
-  @media ${query.greaterThanMedium} {
-    text-align: left;
-  }
 `
 
 export const Content = styled.div`
-  padding: 16px;
   ${({ theme }) => css`
     border: 1px solid ${theme.colors.primary};
   `}

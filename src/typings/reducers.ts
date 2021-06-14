@@ -1,5 +1,4 @@
-import { Entity } from './entities'
-import { Game } from './games'
+import { Entity, EntityGame } from './entities'
 
 export interface LoginState {
   accessToken: string
@@ -8,6 +7,6 @@ export interface LoginState {
 }
 
 export interface GameCollectionState {
-  dataList: Array<Game>
+  dataList: Array<EntityGame>
   isLoading: boolean
 }

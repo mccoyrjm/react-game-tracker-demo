@@ -1,5 +1,5 @@
 export interface Entity {
-  _id: string
+  id: string
   username: string
   password: string
   firstName: string
@@ -7,7 +7,6 @@ export interface Entity {
 }
 
 export interface EntityGame {
-  _id: string
   entityId: string
   gameId: string
   title: string

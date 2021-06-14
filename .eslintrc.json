@@ -28,6 +28,7 @@
       }
     ],
     "import/no-unresolved": "off",
+    "import/order": "warn",
     "linebreak-style": ["error", "windows"],
     "no-unused-vars": "warn",
     "no-use-before-define": "off",

@@ -4,7 +4,7 @@ import query from 'styles/mediaQueries'
 export const CardSection = styled.div`
   @media ${query.greaterThanMedium} {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
   }
 `
 

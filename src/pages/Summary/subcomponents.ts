@@ -14,3 +14,9 @@ export const GamesCount = styled.p`
   font-size: 40px;
   text-align: center;
 `
+
+export const SkeletonLoader = styled.div`
+  padding: 16px;
+  width: 100%;
+  text-align: center;
+`
